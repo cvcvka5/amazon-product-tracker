@@ -9,11 +9,3 @@ def on_change(before, after, changed_keys):
 if __name__ == "__main__":
     url = "https://www.amazon.de/dp/B0B1V5ZP3F"  # Example Amazon product
     product = Product.track_product_amazon(url, interval=10, on_change_funcs=[on_change])
-
-    print("🚀 Tracking started. Press Ctrl+C to stop...")
-    try:
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        print("\n🛑 Ctrl+C detected! Stopping all trackers...")
-        Product.stop_all()

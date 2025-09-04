@@ -35,12 +35,6 @@ def on_change(before, after, changed_keys):
 
 url = "https://www.amazon.de/dp/B0B1V5ZP3F"
 product = Product.track_product_amazon(url, interval=10, on_change_funcs=[on_change])
-
-try:
-    while True:
-        time.sleep(1)
-except KeyboardInterrupt:
-    Product.stop_all()
 ```
 
 ---
