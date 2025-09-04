@@ -20,6 +20,8 @@ cd amazon-product-tracker
 pip install -r requirements.txt
 ```
 
+---
+
 ## Example Usage
 
 ```python
@@ -40,3 +42,6 @@ try:
 except KeyboardInterrupt:
     Product.stop_all()
 ```
+
+---
+## `LICENSE` (MIT)
